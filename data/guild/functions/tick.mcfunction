@@ -1,0 +1,1 @@
+scoreboard players add $guild.time guild.time 1
