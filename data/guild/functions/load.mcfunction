@@ -41,3 +41,5 @@ scoreboard objectives add guild.internal.logs-display.diff-hours dummy
 scoreboard objectives add guild.internal.logs-display.diff-days dummy
 
 scoreboard objectives add guild.internal.logs-display.timestamp dummy
+
+#declare score_holder guild.internal.playerIdIndex "It is used to define the index for the players in the guild"
