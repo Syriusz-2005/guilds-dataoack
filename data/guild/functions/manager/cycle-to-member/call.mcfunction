@@ -12,3 +12,6 @@ execute store result score $guild.func.manager.cycle-to-member.memberArrayLength
 function guild:manager/cycle-to-member/cycle
 
 execute store result storage guild:func/manager/cycle-to-member.out success int 1.0 run scoreboard players get $guild.func/manager.cycle-to-member.result guild.internal
+
+execute if score $guild.func/manager.cycle-to-member.result guild.internal matches 1 run return 1
+return 0

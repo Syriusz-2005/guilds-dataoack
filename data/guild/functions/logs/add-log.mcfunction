@@ -9,6 +9,8 @@
 
 execute store result storage guild:func/logs/add-log.in log.timestamp int 1.0 run scoreboard players get $guild.time guild.time
 
+
+#@team specific
 data modify storage guild:func/logs/add-log.internal guildName set value "red"
 execute store success score $func/logs/add-log.matchNotFound guild.internal run data modify storage guild:func/logs/add-log.internal guildName set from storage guild:func/logs/add-log.in guild
 
