@@ -6,6 +6,7 @@ data modify storage guild:func/manager/cycle-to-member.in currentMember set from
 execute store success score $guild.func.manager.cycle-to-member.matchNotFound guild.internal run data modify storage guild:func/manager/cycle-to-member.in currentMember.name set from storage guild:func/manager/cycle-to-member.in name
 
 
+execute if score $guild.func.manager.cycle-to-member.matchNotFound guild.internal matches 0 run scoreboard players set $guild.func/manager.cycle-to-member.result guild.internal 1
 execute if score $guild.func.manager.cycle-to-member.matchNotFound guild.internal matches 0 run return 1
 
 data modify storage guild:func/manager/cycle-to-member.in memberList append from storage guild:func/manager/cycle-to-member.in memberList[0]
