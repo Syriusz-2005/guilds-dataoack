@@ -1,4 +1,4 @@
-#declare storage guild:func/logs/add-log.in {log: {type: "guild:log/join" | "guild:log/leave", message: "JSON TEXT COMPONENT", timestamp?: int}, guild: "red" | "blue" | "green" | "white"}
+#declare storage guild:func/logs/add-log.in {log: {type: "guild:log/join" | "guild:log/leave" | "guild:log/kick", message: "JSON TEXT COMPONENT", timestamp?: int}, guild: "red" | "blue" | "green" | "white"}
 #declare storage guild:func/logs/add-log.internal
 #declare score_holder $func/logs/add-log.matchNotFound
 
